@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn-header {
+  width: 10%;
+  margin-left: 10px;
+  position: fixed;
+  height: 100vh;
+}
+.btn-header .header-btns {
+  width: 140px;
+  position: relative;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+.btn-header .header-btns a:hover .fab {
+  transition: all 0.3s;
+  transform: scale(0.7);
+  animation: iconAnim 0.5s linear infinite;
+  animation-delay: 0.3s;
+}
+.btn-header .header-btns a {
+  width: 40px;
+  text-decoration: none;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.btn-header .header-btns a:hover {
+  width: 150px;
+}
+.btn-header .header-btns a i {
+  font-size: 40px;
+}
+.btn-header .header-btns a .fa-telegram {
+  color: blue;
+}
+.btn-header .header-btns a .fa-youtube {
+  color: red;
+}
+.btn-header .header-btns a .fa-facebook {
+  color: blue;
+}
+.btn-header .header-btns a:nth-child(1)::before {
+  content: "Telegram";
+  position: absolute;
+  margin-left: 200px;
+  color: blue;
+  left: 0;
+  transition: all 0.5s linear;
+  font: 500 18px/10px sans-serif;
+}
+.btn-header .header-btns a:nth-child(1):hover::before {
+  content: "Telegram";
+  margin-left: 50px;
+}
+.btn-header .header-btns a:nth-child(2)::before {
+  content: "Youtube";
+  position: absolute;
+  margin-left: 200px;
+  color: red;
+  left: 0;
+  transition: all 0.5s linear;
+  font: 500 18px/10px sans-serif;
+}
+.btn-header .header-btns a:nth-child(2):hover::before {
+  content: "Youtube";
+  margin-left: 50px;
+}
+.btn-header .header-btns a:nth-child(3)::before {
+  content: "Facebook";
+  position: absolute;
+  margin-left: 200px;
+  color: blue;
+  left: 0;
+  transition: all 0.5s linear;
+  font: 500 18px/10px sans-serif;
+}
+.btn-header .header-btns a:nth-child(3):hover::before {
+  content: "Facebook";
+  margin-left: 50px;
+}
+@keyframes iconAnim {
+  0% {
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}/*# sourceMappingURL=button.css.map */
